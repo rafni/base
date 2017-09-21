@@ -10,7 +10,7 @@
     ],
     "require": {
         "php": ">=7.0",
-        "laravel/framework": ">=5.1.*",
+        "laravel/framework": ">=5.1",
         "laravelcollective/html": "^5.4"
     },
     "require-dev": {
