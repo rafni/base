@@ -1,0 +1,41 @@
+{
+    "name": "rafni/base",
+    "description": "Development base for projects with Laravel that includes user management, roles and panel access privileges (ACL).",
+    "license": "MIT",    
+    "authors": [
+        {
+            "name": "Alberto Rafael",
+            "email": "rafnicoder@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "laravel/framework": ">=5.1.*",
+        "laravelcollective/html": "^5.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~5.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Rafni\\Base\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Rafni\\Base\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Rafni\\Base\\BaseServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "preferred-install": "dist"
+    }
+}
